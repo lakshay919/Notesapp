@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=SUSE:wght@100..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>TO-DO APP</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="search">
+                <input id="searchInput" type="text" name="search" placeholder="Search your Notes.....">
+                <i class="fa-solid fa-search"></i>
+            </div>
+            <select class="note-Priorities" name="priorities">
+                <option value="">All</option>
+                <option value="primary">Primary</option>
+                <option value="secondery">Secondery</option>
+                <option value="tertiary">Tertiary</option>
+            </select>
+            <div>
+                <button class="addbtn" style="background-color: #fff; color: black;"><i
+                        class="fa-solid fa-plus"></i></button>
+                <button class="deleteAllBtn" style="background-color:#000; color: #fff; border: 2px solid #fff;"><i
+                        class="fa-solid fa-trash"></i></button>
+            </div>
+        </nav>
+        <div class="form-box">
+            <form>
+                <label>Heading</label>
+                <input type="text" name="text">
+                <label>Your Note</label>
+                <textarea name="textarea"></textarea>
+                <div class="customise">
+                    <select class="note-priorities" name="priorities">
+                        <option value="primary">Primary</option>
+                        <option value="secondery">Secondery</option>
+                        <option value="tertiary">Tertiary</option>
+                    </select>
+                    <input type="color" name="color">
+                </div>
+                <div class="submit-close-btns">
+                    <input type="submit" name="submit" placeholder="Submit">
+                    <button class="close-btn">Close</button>
+                </div>
+            </form>
+        </div>
+        <div class="notesContainer">
+
+        </div>
+    </div>
+    <div class="Blur-container"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
